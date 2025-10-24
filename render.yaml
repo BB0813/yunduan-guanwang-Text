@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: cloudforge-home-server
+    env: node
+    plan: free
+    region: singapore
+    rootDir: server
+    buildCommand: npm ci
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /api/github/projects?owner=vercel
+    envVars:
+      - key: GITHUB_TOKEN
+      - key: NODE_VERSION
+        value: 18

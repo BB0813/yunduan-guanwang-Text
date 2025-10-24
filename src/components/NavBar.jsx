@@ -18,7 +18,7 @@ export default function NavBar() {
   return (
     <Flex as="nav" align="center" p={4}>
       <HStack spacing={3}>
-        <Image src="/云锻logo.jpg" alt="CloudForge Logo" h={6} borderRadius="md" />
+        <Image src={`${import.meta.env.BASE_URL}云锻logo.jpg`} alt="CloudForge Logo" h={6} borderRadius="md" />
         <Heading size="md" color="brand.600">
           CloudForge
         </Heading>

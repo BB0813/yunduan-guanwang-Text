@@ -12,7 +12,7 @@ export default function Home() {
     <Box maxW="1200px" mx="auto" px={6} py={10}>
       <Box borderWidth="1px" borderRadius="lg" p={10} bgGradient={heroBg}>
         <Stack spacing={6} align="center" textAlign="center">
-          <Image src="/云锻logo.jpg" alt="CloudForge Logo" h={16} borderRadius="md" />
+          <Image src={`${import.meta.env.BASE_URL}云锻logo.jpg`} alt="CloudForge Logo" h={16} borderRadius="md" />
           <Heading
             size="xl"
             bgGradient="linear(to-r, brand.500, brand.700)"
